@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 
 #import "NSStringMask.h"
+#import "JVFloatLabeledTextField.h"
 
 /** This subclass of UITextField is used to adapt a text field to NSStringMask.
  
@@ -54,7 +55,7 @@
  The instance's methods that conforms to UITextFieldDelegate will always be called __before__ UITextFieldMask's methods and their results have preference. Therefore, if _Example_'s `textFieldShouldReturn:` return `NO`, UITextFieldMask will not evaluate the mask.
  
  */
-@interface UITextFieldMask : UITextField <UITextFieldDelegate>
+@interface UITextFieldMask : JVFloatLabeledTextField <UITextFieldDelegate>
 
 #pragma mark - Properties
 /// @name Properties
